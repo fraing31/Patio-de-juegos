@@ -6,7 +6,7 @@ app = Flask( __name__ )
 @app.route('/play', methods=['GET'])
 def play():
 
-    return render_template( "hello.html" ) 
+    return render_template( "box.html" ) 
 
 @app.route('/play/<int:num>', methods=['GET'])
 def playDiv( num ):
@@ -20,10 +20,3 @@ def playDivColor( num, colorBox):
 
 if __name__ == "__main__":
     app.run( debug=True )
-
-
-#@app.route( '/hello/<string:banana>/<int:num>', methods=['GET'])##
-
-#def hello(banana, num):##
-
-#   return render_template("hello.html", banana=banana, num=num )##
