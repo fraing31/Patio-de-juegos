@@ -4,14 +4,13 @@ h1 {
 }
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
-
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
 }
 .user {
     border: 2px solid black;
     margin: 20px;
     padding: 10px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
